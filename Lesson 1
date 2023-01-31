@@ -1,0 +1,50 @@
+Week 1 Lesson Plan 
+
+What are our objectives today?
+-Discuss Python basics
+-create our first hello world app.
+-run your app.
+-learn how to comment.
+-If we have extra time we can start assignment operators and variables.
+
+Introduction:
+What is object-oriented programming?
+-Object oriented programming is programming in which software design is around data or objects, rather than functions and logic.
+-Two of the most popular OOP languages are Java and Python.
+-An example of object-oriented programming would be if we were working with a program used in a school.  An object we may use is a student, we are able 
+to give this student a firstName, lastName, studentId, DOB, etc.  The jist is that you give these attributes to a student object as opposed to simply 
+passing a student age or name is to make your code more reusable, scalable, and to cut down on redundancy in code.  Something important you will learn 
+is that coding once is better than having to make many small changes.
+-We will come back and discuss compilers, interpreters, etc. for now stick with the lesson and get the basics down before worrying too much about the 
+behind the scenes.
+
+What will we be learning?
+-We will be learning Python.
+
+Why Python?
+-Python is very readable for new programmers and will allow you to focus on the code rather than the intricacies.  Python scripts are very adaptable 
+and can be run almost anywhere, much like Java.  Python is a very widely used language and it is a good start for new programmers, with a robust 
+open-source community to pull from.
+
+What is open-source programming?
+Open-source code is free and very accessible.  Lucky for us, the open-source community is very large and well maintained.  Open-source code allows us 
+to focus on the objective of our code rather than every aspect of business logic.  Why reinvent the wheel if someone already created it and tested it for 
+you.  Only in this case the people in question number in the hundreds and thousands, sometimes even millions.
+
+Where will we be writing our code?
+We will be using Replit, a free online IDE, console, and compiler that you can access from your web browser.  Other options are visual studio code, 
+Jupyter notebook, etc.  You can try those on your time but for ease we will use Replit.
+
+Documentation:
+If you want a head start you can look into the Python documentation and you will learn that documentation will be your best friend.  This language is
+very well maintained and accessible online, you have the internet, so the world is your oyster.  There is documentation for pretty much anything under 
+the sun you may want to know.
+
+Resources:
+Stack overflow is a resource you will come to be very familiar with.  It is a developer community where questions can be asked and answered on 
+just about any programming language, not just Python.  Most of your questions will have already been asked on stack overflow.  I know you will probably
+just copy and paste your code, but at least attempt to understand what is happening in it.  It’s never fun to explain mystery code you know nothing about, 
+I suggest using it as a tool not a crutch.  At least until you have the fundamentals down.
+
+
+
