@@ -1,0 +1,60 @@
+Lesson 2.1
+
+Continue python operators and Lists
+
+Objective:
+-Show how we can make operators useful to us
+-basic pythonic math algorithms
+-Show other list methods 
+-loop through list
+-Show how methods work
+
+
+Methods are a way to use pre built instructions in your program
+
+The most basic method you know is the print() method.  If you recall it allows you to print to your console.  Let’s show how it works, then try some other examples.
+
+How to call a method:  
+For this example you call the method name and the parentheses around it.
+print()
+
+This will do nothing though, why?
+The method has nothing to print.
+
+This is why we pass in our string or number or variable, whatever you want to print in side the parentheses, like so:
+print(“mercedes”)
+print(21)
+print(True)
+
+Not all methods can be passed anything though, some only take integers, strings, or lists, etc.  It just depends on the method.
+
+Here we will test the index method:
+Index() = Returns the index of the first element with the specified value(the passed in value)
+
+artistList = [“drake”, “beyonce”, “durk”, “tjay”, “ice spice”]
+
+artistList.index(“Kanye”)
+This will give an error.  Why?  Kanye is not in the list, for this method you must refer to something in the list.
+
+artistList.index(“ice spice”)
+This will work.
+
+
+
+This algorithm is a standard deviation algorithm, you just put your numbers in the list and get the standard deviation.
+
+
+#create a list with the values you need to find the standard deviation of
+
+SDList = [4, 8, 28, 16, 29, 10, 31, 7]
+valueCounter = 0 #this value is what holds the numbers we are adding together 
+increment = 0 # holds number of values in list
+
+for value in SDList: # this loop goes through each item in the list
+    valueCounter += value # valueCounter adds up each value and hold the result in it
+    increment += 1 # increment lets us know how many values are in our list
+    standardDeviation = valueCounter / increment # standard deviation divides the added values by the number of values = standard deviation
+
+print(standardDeviation)
+
+
