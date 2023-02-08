@@ -1,0 +1,74 @@
+Tuples/Dictionaries
+
+Objectives:
+Introduce tuples
+Introduce Dictionaries
+When would you use a tupple vs dictionary?
+
+
+Tuples are used to store multiple items in a single variable.
+
+-very similar to lists, but with a few different constraints
+-a tuple is a collection(like a list) which is ordered and unchangeable.
+-tuples are written with round brackets  ( Ex. Exampletuple = () )
+-allows duplicates
+-tuple items are indexed, the first item has index [0], the second item has index [1] etc. Like lists.
+-only use if the items WILL NOT CHANGE, because you cant change them(no update or removal)
+-only 2 built in methods, index() and count()
+
+Example:
+thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+
+Example:     #tuple with one item
+thistuple = ("apple”,)    #you need the comma
+
+Example code:
+firstTuple = ("bey", "arnold", "lamar", "chloe")
+
+#loop to see what's in the tupple
+for item in firstTuple:
+  print(item)
+
+
+
+
+Dictionaries are used to store data values in key:value pairs.
+
+-meaning we have a key, which allows us to access information that pertains to it.  So if we have a student dictionary, 
+the key may be an address and the value their actual address.
+-A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+-Use dictionary when info may need to be changed, but for more complicated scenarios there are better ways
+
+Example:
+carDictionary = {
+  "brand": “BMW”,
+  "model": “M4”,
+  "year": 2022,
+  “Sale Price”: 73000
+}
+
+print(carDictionary)
+
+
+Dictionary Code/Demo
+
+RenaissanceTickets = {
+  "Price" : "600 +",
+  "Sale Date" : "January 17",
+  "Available" : "If you got it",
+  "Locations" : ["New York", "LA", "Miami", "Philadelphia"]
+}
+
+#call specific value in dictionary
+#print(RenaissanceTickets["Locations"])
+
+#update value in dictionary, here we changed the ticket price
+#RenaissanceTickets["Price"] = "800"
+#print(RenaissanceTickets["Price"])
+
+#add new value or values in dictionary
+#RenaissanceTickets.update({"Resale Available": "Yes" , "Capacity" : 30000})
+
+
+
+#print(RenaissanceTickets)
