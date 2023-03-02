@@ -1,0 +1,61 @@
+Lesson 5.1 For loops and cont./previous refresher
+
+Objectives:
+-Refresh on while loops
+-Introduce for loops
+-demo for loops
+
+Do Now:
+
+I will give you some code and you fill in the blanks to make it work
+WHAT YOU NEED TO CHANGE:
+-Give the loopCounter variable a value to start from
+-Give the loopCap variable a cap to stop at
+-BONUS: WHAT IS THE KEYWORD HERE?
+
+COPY FROM LINES 17-23
+
+loopCounter = 
+loopCap = 
+while loopCounter < loopCap:
+  print(loopCounter)
+  loopCounter += 1
+
+print("we maxed out on loops, change the loopCounter cap to go further.")
+
+
+
+For Loops:
+-A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+-the for loop allows you to travers or go through a structure you have
+-the while loop is far more broad in use and can be used for just about anything
+
+COPY LINES 33-38
+
+For Loop Example:
+languages = ["english", "spanish", "french", "italian", "mandarin"]
+
+for language in languages:
+  print(language)
+
+
+
+NOW TRY ONE YOURSELF:
+
+COPY LINES 48-52
+
+Description: Fill the animalList and put the variable that tracks each element into the print statement.
+
+exampleList = ["example1", "example2", "example3", "example4"]
+animalList = []#fill this list with some animals
+
+for animal in animalList:
+  print()#fill in with the variable that holds each element of the list
+
+
+You can also loop through a string*:
+
+COPY LINES 59-60
+
+for x in "expeditously":
+  print(x)
