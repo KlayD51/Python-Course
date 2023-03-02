@@ -1,0 +1,60 @@
+Lesson 4.2
+
+Do Now:
+
+Make a program that asks for a secret word, if it’s correct let them in, if not they cant come in.(Fill in information where needed to make it work)
+
+————————start copy hereVVV
+
+#This variable holds the password you ask the person for and the other variable holds the real password so we can compare them
+passwordAttempt = input(“What are you asking for?)
+correctPassword = “This “is where the correct password goes
+
+#The if statement tests if the word we got is the same as our correct password 
+
+if passwordAttempt == correctPassword:
+	print("you can come in")
+else:
+	print("Your not good")
+
+———————end copy here^^^
+
+Objectives:
+-Refresher on conditions and input
+-while loops 
+-while loop demo
+
+What are loops for?
+A loop is good for anytime you want to do the same thing multiple times
+
+-loops can be set to a certain amount of times or infinite(that might crash your machine)
+-you can set a variable to tell how many iterations(or times) to loop
+-basic examples are of printing words or writing a sentence but a loop can be used to keep purchasing on a shopping bot or anything repetitive
+-a great way to reduce the amount of work for your self
+-you could also loop through a list to print each of them
+
+
+Ex:
+
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+
+——————start copy hereVVV
+
+Looping through list:
+
+languages = ["english", "spanish", "french", "italian", "mandarin"]
+
+for language in languages:
+  print(language)
+
+#language is the element we are at in the loop
+#languages is the list we are looping through
+
+———————end copy here^^^
+
+
+Demo video for while loops
+
