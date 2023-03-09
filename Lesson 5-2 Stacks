@@ -1,0 +1,47 @@
+Objectives:
+What are stacks?
+How can we use them?
+FIFO vs LIFO?
+
+Do Now: Loop through the word “Douglas” with a for loop.  I’ll give you the variable holding the word and you have to loop through it.
+
+Copy from lines 9-14
+
+DoNowWord = "Douglas"
+
+For _ in DoNowWord:
+	print(_)
+
+What is a stack?
+-A stack is a data structure very much like a list that holds data
+-Stacks work in the terms of LIFO
+-LAST IN FIRST OUT, so last come first serve
+-So if Johnny walks in the class last he gets to leave first since he’s at the back of the line and is closest to the door
+
+How to use it:
+.append() = add to a stack
+.pop() = remove the last added element to a stack
+
+ExampleStack = []
+
+ExampleStack.append("A")
+ExampleStack.append("B")
+ExampleStack.append("C")
+ExampleStack.append("D")
+
+print(ExampleStack)
+
+ExampleStack.pop()
+ExampleStack.pop()
+ExampleStack.pop()
+
+So we can see that a stack is great to use data when you’re looking to take the last thing you added first.  You can also, take something off of a stack and use it in some other data structure.
+
+Exercise:
+
+1.Make a stack(colors or tv shows if you need creative help)
+2.Fill your stack with your append() method
+3.Print your stack when its filled
+4.Lastly, remove some of the elements with pop() to see how your stack looks
+5.print again to see it updated
+
