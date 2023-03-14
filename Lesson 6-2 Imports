@@ -1,0 +1,68 @@
+Lesson 6-2 Imports
+
+Do Now: Create a queue
+
+Steps:
+1.Create a queue(you can even steal the stack you made last class)
+queue = []
+
+2.Fill you queue with x amount of values(3 or 4 is fine)
+queue.append(“First Element”)
+queue.append(“Sec Element”)
+
+3.Print your queue
+print(queue)
+
+4.Remove 2 elements
+queue.pop(0)
+
+4.Print again to see how it changed
+print(queue)
+
+
+Objectives:
+-Queue refresher
+-Imports
+-Imports use cases
+-Imports demo
+
+Imports
+-Imports are a way for you to import code/work someone else has done so that you don’t have to do it
+-You can import anything from a random number generator to a script to steal wifi passwords
+-Just about anything can be imported 
+-Most coding)large Scale) is done using a lot of imports because why would you code something that someone already did
+-Not considered stealing because it doesn’t make sense to reinvent the wheel
+-Just have some idea of what your import will do to your code
+-Imagine the queue you made for the do now just being imported to replit instead of you doing the work
+
+I will leave 3 examples, try them to see what they do can do for you:
+
+Datetime library lets you import the current date and time in a good format.
+
+import datetime
+oTime = datetime.datetime.now()
+print oTime.isoformat()
+
+Random library lets you generate random numbers.
+
+import random
+n = random.randint(0,22)
+print(n)
+
+Faker library gives fake info, name, address, etc. / Good so you don’t have to thing of fake data.
+
+from faker import Faker
+fake = Faker()
+print(fake.name())
+print(fake.address())
+print(fake.password())
+
+Exercise:
+Use faker to make yourself an alias.
+Get fake name
+Get fake address
+
+
+
+https://www.tutorialspoint.com/generating-random-number-list-in-python
+https://python.plainenglish.io/40-usefull-and-interesting-python-packages-2a38755607fe
