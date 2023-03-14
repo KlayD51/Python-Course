@@ -1,0 +1,57 @@
+Do Now: Stack Refresher
+
+-Create a Stack
+-Fill you stack with 4 things(words or numbers) with .append
+-Print your stack
+-remove 2 or 3 elements from stack with .pop
+-Print again
+
+How to create a stack?
+WhateverYourStackNameIs = []
+
+How to fill your stack?
+WhateverYourStackNameIs.append()        <——— what you add goes inside the parentheses
+
+How to remove from stack?
+WhateverYourStackNameIs.pop()
+
+How to print your stack?
+print()		<———— Whatever you named your stack 
+
+
+
+Objectives:
+-Refresh on Stack’s
+-Introduce Queue’s
+-Demo Queue’s
+
+What is a Queue?
+-A queue is a data structure that is much like a stack or list
+-The difference is that instead of last in first out it is first in first out
+-So if you get to class first you get to leave first(first come first serve)
+-instead of regular .pop() you do pop(0), since you want the head to be removed
+
+Example:
+
+queue = []
+  
+# Adding elements to the queue
+queue.append('a')
+queue.append('b')
+queue.append('c')
+  
+print("Initial queue")
+print(queue)
+  
+# Removing elements from the queue
+print("\nElements dequeued from queue")
+print(queue.pop(0))
+print(queue.pop(0))
+print(queue.pop(0))
+  
+print("\nQueue after removing elements")
+print(queue)
+  
+
+Exercise:
+Change your do now stack to a queue and manipulate it.
