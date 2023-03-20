@@ -1,0 +1,67 @@
+Lesson 7-1
+
+Do Now: Import practice
+
+This do now is to show you some more imports that you can use:
+
+Try this code below:
+—————————————
+from art import *
+  
+# return multiple art as str
+art__0=art("woman",number=10)
+  
+print(art__0)
+—————————————-
+
+Try this code also
+—————————————-
+from tqdm import tqdm
+import time
+for a in tqdm(range(100)):
+   time.sleep(2)
+—————————————
+
+
+Objectives:
+-Import refresher/practice
+-import use cases
+-examples of import use cases
+-bridge previous lesson with import use
+
+
+Examples of Imports that would be used in actual code practice: 
+Bisect(a module that allows you to bisect your list)
+-Allows you to insert an element in sorted order
+-You haven’t learned sorting or time complexity but adding things in order saves you a lot of time
+-demonstrate how it would usually be done
+——————————————
+import bisect as bs
+
+ls = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90]
+bs.bisect(ls, 9)
+—————————————
+
+
+NumPy(a module that lets you manipulate lists)
+-Has plenty of methods to manipulate data structure
+-great for data manipulation
+-the code below will splits the array into equal subsection
+
+—————————————
+import numpy as np
+
+x = np.arange(8.0)
+np.array_split(x, 3)
+
+print(x)
+
+print(np.array_split(x,3))
+————————————
+
+
+-you would be surprised how useful methods that remove whitespace,
+Or split an array can be for you
+-let modules do menial tasks for you so you can focus on logic
+-They speed up your work process and are tested and true usually with a community 
+that catches mistakes
