@@ -1,0 +1,49 @@
+Lesson 8 -1 
+
+Objectives:
+
+-Pseudo-Code?
+-Pseudo-Code for rock, paper, scissors?
+-How to break an app into manageable pieces?
+
+Pseudo-Code:
+Natural language written to emulate the needs of code that we may want to implement.  Instead of writing the actual 
+code you write what the code should do, save the heavy lifting for later.
+
+Why do we Write Pseudo Code?
+We write pseudo-code because it helps us to know what we are doing before we actually start, like an outline.  You 
+really want to avoid having to go back and fix things or re-code things because your logic was wrong, or you didn’t 
+account for everything.   It happens of course, but why do more than you have to? 
+
+Pseudo-Code Example:
+https://www.unf.edu/~broggio/cop2221/2221pseu.htm
+
+What are we introducing a game with?
+Everyones favorite rock-paper-scissors!
+
+
+Guess what?  You’re going to help me figure out what we need for our rock-paper-scissors game.
+
+First we need to break what we need to do into smaller objectives(I will help, you just need to remind me how the 
+game is intended to work).
+
+How do we start the game?
+How do we know how to play?
+How do we get the choice of the person playing the game?
+Etc.
+
+Game logic Pseudo-Code:
+
+
+
+
+
+
+
+
+
+
+
+
+
+Next class we will code our Rock-Paper-Scissors game using the logic we made this class
