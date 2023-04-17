@@ -1,0 +1,62 @@
+from getpass import getpass
+
+print("This is a Rock, Paper, Scissors game.  Best 2 out of 3.  You need a partner to play this game")
+print()
+
+print("Instructions: There will be a player 1 and a player 2.  You will each play as 1 of the players.  Enter the player 1 name and player 2 name:")
+print()
+
+P1ScoreCounter = 0
+P2ScoreCounter = 0
+
+player1 = input("Who is player 1(Enter Here): ") 
+player2 = input("Who is player 2(Enter Here): ")
+print()
+
+print("player 1 is ", player1 , "and player 2 is", player2)
+
+while P1ScoreCounter != 2 or P2ScoreCounter != 2:
+  
+  player1Choice = getpass("What do you choose(rock, paper, or scissors) : ").strip().lower()
+  player2Choice = getpass("What do you choose(rock, paper, or scissors): ").strip().lower()
+  print()
+
+  print(player1, "chooses ", player1Choice)
+  print(player2, "chooses ", player2Choice)
+  print()
+#new but need the rest of scenarios
+  if player1Choice == "rock" and player2Choice == "scissors":
+    print(player1, " wins this round")
+    P1ScoreCounter += 1
+    print("player1 score is ", P1ScoreCounter)
+  elif player1Choice == "scissors" and player2Choice == "rock":
+    print(player2, " wins this round")
+    P2ScoreCounter += 1
+    print("player2 score is ", P2ScoreCounter)
+  elif player1Choice == "paper" and player2Choice == "rock":
+    print(player1, " wins this round")
+    P1ScoreCounter += 1
+    print("player1 score is ", P1ScoreCounter)
+  elif player1Choice == "rock" and player2Choice == "paper":
+    print(player2, " wins this round")
+    P2ScoreCounter += 1
+    print("player2 score is ", P2ScoreCounter)
+  elif player1Choice == "scissors" and player2Choice == "paper":
+    print(player1, " wins this round")
+    P1ScoreCounter += 1
+    print("player1 score is ", P1ScoreCounter)
+  elif player1Choice == "paper" and player2Choice == "scissors":
+    print(player2, " wins this round")
+    P2ScoreCounter += 1
+    print("player2 score is ", P2ScoreCounter)
+
+  
+#new
+  if P1ScoreCounter == 2:
+    print(player1, " is the winner!")
+    break
+  if P2ScoreCounter == 2:
+    print(player2, " is the winner!")
+    break
+
+#find a way to make the input text invisible
