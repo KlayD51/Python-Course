@@ -60,3 +60,14 @@ while P1ScoreCounter != 2 or P2ScoreCounter != 2:
     break
 
 #find a way to make the input text invisible
+
+
+-------------------------------------------------------
+
+#Notes
+-if neither player inputs any choice the game breaks
+-full word is too long
+-you can pass a round via enter(maybe make an eject)
+-misspelled words?
+-
+
