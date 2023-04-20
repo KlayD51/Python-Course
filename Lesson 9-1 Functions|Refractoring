@@ -1,0 +1,64 @@
+Lesson 9-1 Functions|Refractoring
+
+Objectives:
+-Introduce functions
+-Introduce refractoring
+-Relate the topics to our RPS game
+
+
+Functions:
+-Remember the first thing we learned, print() that is a function, only it comes with python
+-We can also make our own functions
+-A function is supposed to do one task very well, that task can be anything
+
+Here is a basic function structure:
+
+def exampleFunction():
+  pass
+  
+  
+How does the structure work?
+-You start a function with the "def" keyword
+-After the def keyword you pass the name of your function, then parentheses
+-Inside your parentheses you tell your function what it should take in, they're called(arguments/parameters)
+-These arguments/parameters let you give your function numbers, strings, lists, etc. whatever you may need
+-You finish the line with a : <--- dont know what this is called
+-Then you hit tab to go to the next line
+-It should be indented already, if it isnt, make sure it is
+-Everything on that indent level is considered inside the function(scope)
+-Thats where your instructions go
+
+Here's a Demonstration:  Run lines 32-34 in replit
+
+def pyfunction(phrase):
+  print(phrase)
+
+
+How to call a function?
+-type the name of your function amd pass in whatever you said it should take in the parentheses,
+if its more than 1 seperate with a comma
+-Python knows what it should take in based on what the function is supposed to do
+-Basically, you cant tell a function thats supposed to add numbers together to print a sentence
+-Thats not what its for so you will get an error
+
+Here is an example:  Run lines 47-50
+-I made a function that takes in a phrase anf prints it out
+
+def pyfunction(phrase):
+  print(phrase)
+
+pyfunction("Whatever I put in here will be printed in the terminal")
+
+
+How not to use a function:
+-this actually will work, but it wont do what you want it too
+-It's supposed to take in a phrase not some numbers(integers)
+
+def pyfunction(phrase):
+  print(phrase)
+
+pyfunction(5, 7, 9)
+
+
+Function Resources:
+https://www.w3schools.com/python/python_functions.asp
