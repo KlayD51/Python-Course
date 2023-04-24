@@ -1,0 +1,56 @@
+Lesson 10-1
+
+Objectives:
+-Refractoring
+-How to turn something into a function
+
+Do Now:
+-Make a function that multiplies 3 numbers together
+
+
+Refractoring:
+-Refractoring is when you go back and make your code better
+-Usually this means making it easier to read
+-This could also mean updating it to a better way
+-Or if something new comes out using new resources
+-Think of it as bettering something you already had
+
+What can you do to refractor?
+-You can better organize
+-You can turn something into a function
+-You can update something that isn’t available anymore(deprecated)
+
+
+Example:
+We are going to put the line below into a function instead(refractor)
+
+A = 4
+B = 8
+C = a + b
+Print(c)
+
+A = 16
+B = 29
+C = a + b
+Print(c)
+
+
+After Refractoring:
+
+
+Def addFunct(a, b):
+	c = a + b
+	print(c)
+
+addFunct(4, 8)
+addFunct(16, 29)
+
+Now have them put this into a function:
+
+A = 10
+B = 14
+C = (a / b) + 25
+Print(c)
+
+
+If more time put loops into a function(RPS Game).
