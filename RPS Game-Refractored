@@ -30,25 +30,25 @@ print("player 1 is ", player1 , "and player 2 is", player2)
 
 while P1ScoreCounter != 2 or P2ScoreCounter != 2:
   
-  player1Choice = getpass("What do you choose(rock, paper, or scissors) : ").strip().lower()
-  player2Choice = getpass("What do you choose(rock, paper, or scissors): ").strip().lower()
+  player1Choice = getpass("What do you choose(r, p, or s) : ").strip().lower()
+  player2Choice = getpass("What do you choose r, p, or s): ").strip().lower()
   print()
 
   print(player1, "chooses ", player1Choice)
   print(player2, "chooses ", player2Choice)
   print()
 #new but need the rest of scenarios
-  if player1Choice == "rock" and player2Choice == "scissors":
+  if player1Choice == "r" and player2Choice == "s":
     P1Increment()
-  elif player1Choice == "scissors" and player2Choice == "rock":
+  elif player1Choice == "s" and player2Choice == "r":
     P2Increment()
-  elif player1Choice == "paper" and player2Choice == "rock":
+  elif player1Choice == "p" and player2Choice == "r":
     P1Increment()
-  elif player1Choice == "rock" and player2Choice == "paper":
+  elif player1Choice == "r" and player2Choice == "p":
    P2Increment()
-  elif player1Choice == "scissors" and player2Choice == "paper":
+  elif player1Choice == "s" and player2Choice == "p":
     P1Increment()
-  elif player1Choice == "paper" and player2Choice == "scissors":
+  elif player1Choice == "p" and player2Choice == "s":
     P2Increment()
 
   
