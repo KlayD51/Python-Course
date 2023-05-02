@@ -1,0 +1,83 @@
+Objectives:
+-File I/o
+-Reading and Writing to file
+-Why we may want to read/write to file?
+
+File I/o:
+-A method for us to be able to write and read from a file
+-What is file reading?  File reading allows us to have our program read the contents of a file for us and we may utilize that information later
+-What is file writing?  File writing allows us to add content to a file outside your program
+-Reading/Writing allows us to manipulate files outside our program however we specify, a very useful ability when dealing with data
+
+File Paths:
+-Everything in your machine(computer) is organized based on file system
+-In the same way you can tell a program how to navigate your files in order to find the right one
+-Basic syntax:   “User/documents/school/python coding”
+-User is the account, documents specifies the next level, school folder is within documents on the next level, python coding is a folder within documents,…After that we may specify which file we want specifically
+
+
+To open the file, use the built-in open() function.
+The open() function returns a file object, which has a read() method for reading the content of the file:
+
+Ex:
+
+f = open("demofile.txt", "r")
+print(f.read())
+
+
+
+By default the read() method returns the whole text, but you can also specify.
+
+Ex: Read 5 lines
+
+f = open("demofile.txt", "r")
+print(f.read(5))
+
+
+
+You can return one line by using the readline() method:
+
+Ex:
+f = open("demofile.txt", "r")
+print(f.readline())
+
+
+
+Loop through the file line by line:
+
+f = open("demofile.txt", "r")
+for x in f:
+  print(x)
+
+
+
+It is a good practice to always close the file when you are done with it.
+
+Ex:
+f = open("demofile.txt", "r")
+print(f.readline())
+f.close()
+
+
+
+f.close()To read a file’s contents, you can call f.read(size), which reads some quantity of data and returns it as a string. size is an optional numeric argument. When size is omitted or negative, the entire contents of the file will be read and returned
+
+Ex:
+f = open('my_file', 'r')
+print(f.read(10))
+
+
+Program to return word count: \/
+
+file = open("C:\data.txt", "r")
+
+#read the content of file
+data = file.read()
+
+#get the length of the data
+number_of_characters = len(data)
+
+print('Number of characters in text file :', number_of_characters)
+
+
+https://www.w3schools.com/python/python_file_open.asp
