@@ -1,0 +1,89 @@
+Objectives:
+-Cool Uses for File Reading
+-File writing
+
+Do Now:
+Step 1: Go to google classroom - click blue python-course
+Step 2: Open lesson 11-1(you will use the code from the first example)
+Step 3: Open exampleText.txt , you can either take the Don Quixote text or the knicks text
+Step 4: Go to replit in the left hand bar, click the icon to make a new file, name the file, once created paste your text there
+Step 5: go back to main.py and put the example code from 11-1 in there
+Step 6: change the name of the file in the code to whatever you named your file you created
+
+What can we do with file writing: 
+
+----count words in a text Ex: lines 17-28
+
+number_of_words = 0
+ 
+with open(r'knicks.txt','r') as file:
+
+    data = file.read()
+ 
+    lines = data.split()
+ 
+    number_of_words += len(lines)
+ 
+ 
+print(number_of_words)
+
+
+
+----find the most common letter used in a text Ex: lines 35-41
+
+
+from collections import Counter
+
+with open('knicks.txt') as f:
+    counts = Counter(f.read())
+
+print('\n'.join(f'letter "{letter}": {count}' for letter, count in counts.items()
+                if letter != '\n'))
+
+
+----read and remove words from text Ex: lines 46-57
+
+reading_file = open("knicks.txt", "r")
+
+new_file_content = ""
+for line in reading_file:
+    stripped_line = line.strip()
+    new_line = stripped_line.replace("won", "almost won")
+    new_file_content += new_line +"\n"
+reading_file.close()
+
+writing_file = open("knicks.txt", "w")
+writing_file.write(new_file_content)
+writing_file.close()
+
+
+
+File Writing:
+-File writing lets us write content to a file of our choice
+-Careful you don’t overwrite a file that already has contents
+-You can do whatever you’re doing and have that saved permanently in a file after you’ve cleared your terminal
+
+X = create - will create file, error if already exists
+A = append - will create a file if the specified file doesn’t exist
+W = write - will create a file if the one used doesn’t exist
+
+Ex:
+
+f = open("knicks.txt", "a")
+f.write("The Knicks will probably always be mid!")
+f.close()
+
+Ex, with function:
+(This function will append two strings together, then we will write that string to a file)
+
+Def appendString(string1, string2):
+	compoundSent = string1 + string2 
+	print(compoudSent)
+	
+
+F = open(“knicks.txt”, “a”)
+F.write(appendSent(“The Knicks may”, “never get Zion, ever…”)
+f.close()
+
+
+
