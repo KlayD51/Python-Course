@@ -74,16 +74,14 @@ f.write("The Knicks will probably always be mid!")
 f.close()
 
 Ex, with function:
-(This function will append two strings together, then we will write that string to a file)
+llines 79-85
 
-Def appendString(string1, string2):
-	compoundSent = string1 + string2 
-	print(compoudSent)
-	
+def example(date):
+  return 'Hello, today ' + date
 
-F = open(“knicks.txt”, “a”)
-F.write(appendSent(“The Knicks may”, “never get Zion, ever…”)
+
+f = open("knicks.txt", "a")
+f.write(example("5/4/23"))
 f.close()
-
 
 
