@@ -1,0 +1,82 @@
+Objectives:
+-Understanding methods
+-Using built-in methods
+-Documentation sourcing
+
+Do Now:
+-Go to https://trinket.io
+-Go to https://docs.python.org/3/library/turtle.html
+
+The first link open's trinket.io and the second link is the documentation(how to use) for the animation.
+
+What is Trinket.io?
+Trinket.io gives you pre made methods to use to animate a small python graphic.  These methods can be found 
+in the documentation.  You have to read what the method you want to use accepts as input to use it in your code.
+
+Excercise:
+Pick two methods from the second link to animate your turtle, use them in your template to animate your turtle
+to use them you will need to read the documentation and see how to correctly use the methods given.  Start with
+moving in a direction, or somethinhg simple, them maybe a more complex method.
+
+
+I will attach an example of code that I made that uses Trinket.io
+
+Sample Code:(lines 26-55) - some animation the turtle can do
+
+# You can edit this code and run it right here in the browser!
+# First we'll import some turtles and shapes: 
+from turtle import *
+from shapes import *
+
+# Create a turtle named tutle:
+turtle = Turtle()
+turtle.shape("turtle")
+turtle.speed(7)
+turtle.color("yellow green")
+turtle.fillcolor("violet")
+
+# Movement
+turtle.forward(25)
+turtle.left(45)
+turtle.circle(180)  # draw a semicircle
+turtle.dot(20, "black")
+
+
+#turtle speed
+turtle.speed('normal')
+
+# Write a little message:
+turtle.penup()
+turtle.goto(0,-50)
+turtle.color("black")
+turtle.write("Intro to Turtles 101", None, "center", "16pt bold")
+turtle.goto(0,-80)
+
+# Try changing draw_circle to draw_square, draw_triangle, or draw_star
+
+
+
+
+
+Here is a template to get you started animating:(lines 61-82)
+
+from turtle import *
+from shapes import *
+
+# Create a turtle named tutle:
+turtle = Turtle()
+turtle.shape("turtle")
+
+# Movement
+turtle.forward(10)
+turtle.left(10)
+
+
+# Write a little message:
+turtle.penup()
+turtle.goto(0,-50)
+turtle.color("purple")
+turtle.write("Turtle Template", None, "center", "16pt bold")
+turtle.goto(0,-80)
+
+# Try changing draw_circle to draw_square, draw_triangle, or draw_star
