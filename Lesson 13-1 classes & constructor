@@ -1,0 +1,66 @@
+Lesson 13-1
+
+Objectives:
+-What is a constructor?
+-What is a class?
+-What is an object?
+
+Do Now:
+Think of any object that you want to create, give them 5 details to their character.
+
+
+Classes:
+-classes allow us to partition our code into sections that are pertinent to just that thing
+-for example we can give all the information for a basketball class that could let us be able 
+to play a basketball game
+-This class could have anything from how large and how much air a ball should have to calculating
+how may times it should bounce based on air pressure
+-The point is that classes aford you the ability to break up your code into relevant sections
+
+Ex: Making a class named person
+
+class person:
+
+
+Constructor:
+-Remember the onject you thought of?
+-A constructor allows you to tell python exactly what our "thing" should be characterized by
+-Think ht, weight, color, smell, etc.(a useful descirption of whats needed)
+-This is how we can include what we want and functions as a way to start thinking about the real 
+needs of your program
+-Syntax:: you need to start with the def __init__(self) and include each attribute as a parameter like below
+
+Ex: Making a constructor for person.
+
+def __init__(self, name, age, bornDay):
+    self.name = name
+    self.age = age
+    self.bornDay = bornDay
+    
+    
+Object:
+-An object in python allows us to send information in the form of a little entity we created
+-Instead of sending a number to, we could send an object with the ID for a customer with a total of 10
+-This allows the code to be cleaner and more flexible + more secure
+
+Ex: Making an object from a class(we gave a name, age, and date of birth)
+
+MiniPerson = person("Darnell Mini", 6, "12/6/07")
+
+
+Full Example:(lines 55-66)
+
+class OnlineBank:
+  
+  def __init__(self, ID, name, accountNumber, routingNumber, address):
+    self.ID = ID
+    self.name = name
+    self.accountNumber = accountNumber
+    self.routingNumber = routingNumber
+    self.address = address
+
+DarlasAccount = OnlineBank(0, "Darla James", 10291001, 20026722, "179 Houston Ave, East Atlanta")
+
+print(DarlasAccount)
+
+print(DarlasAccount.routingNumber)
