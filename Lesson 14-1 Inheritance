@@ -1,0 +1,53 @@
+Objectives:
+-refresh classes
+-introduce inheritance
+-why do we need inheritance
+
+Do Now:
+Open to replit and the lesson 13-1
+
+
+What is inheritance:
+-Much like what it sounds like inheritance allows you to inherit something
+-This thing is generally the code and methods that you have already made
+-Think of it like this, if your parent bought a pack of water and it's sitting in the kietch,
+why would you also go out to buy a case too
+-Why not just use that case thats already in the kitchen
+
+How do we tell python we want to inherit?
+-simple, pass the name of the parent class into the parentheses of the child class
+Example Below!!!!\/\/\/\/\/\/\/\/ -- person is the class being inherited(so we get its constructor and methods)
+
+Line 30 is what you want to see!!
+
+class person:
+
+  def __init__(self, fName, lName, email):
+    self.fName = fName
+    self.lName = lName
+    self.email = email
+
+class student(person):
+
+
+
+Inheritance in action:
+Run lines 38-48 !!!!!!!
+
+
+class person:
+
+  def __init__(self, fName, lName, email):
+    self.fName = fName
+    self.lName = lName
+    self.email = email
+
+class student(person):
+
+  studentX = person("darnell", "johnston", "johnstonD@gmail.com")
+  print(studentX.fName)
+
+
+
+As seen above the class student inherits the contents of python so we dont have to create the same constructor again.
+  
